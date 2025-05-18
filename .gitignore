@@ -1,5 +1,23 @@
+# Python 缓存
 __pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# 环境相关
+.env
+*.env
+
+# 模型和数据文件
 *.bin
 *.pt
-.env
-*.ipynb_checkpoints/
+*.jsonl
+*.ckpt
+
+# 输出目录
+outputs/
+logs/
+checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
