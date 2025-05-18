@@ -9,6 +9,24 @@
 
 import json
 import os
+from datasets import load_dataset
+
+def load_dataset_from_hf(dataset_name="whoc666/nlp_llama3_project_dataset", split="train"):
+    """
+    从 Hugging Face Hub 加载数据集。
+
+    参数:
+    - dataset_name: str，Hugging Face 上数据集的路径
+    - split: str，加载数据集的拆分（train/test/validation）
+
+    返回:
+    - datasets.Dataset 对象
+    """
+    print(f"开始加载数据集: {dataset_name}, 拆分: {split}")
+    dataset = load_dataset(dataset_name, split=split)
+    print(f"加载完成，数据集大小: {len(dataset)}")
+    return dataset
+
 
 def load_raw_data(raw_dir="data/raw"):
     """
