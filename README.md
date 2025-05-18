@@ -61,7 +61,8 @@ nlp_llama3_project/
 | 数据仓库       | `whoc666/nlp_llama3_project-data`      | 存放训练语料（如 `*.jsonl` 文件）         |
 | Space 展示仓库 | `whoc666/nlp_llama3_project-app`       | Gradio 网页问答助手，部署到 Spaces        |
 
----
+---conda remove --name llama3-env --all
+
 
 ## 📬 联系作者
 

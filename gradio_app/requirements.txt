@@ -1,5 +1,6 @@
-transformers
-gradio
 torch
-peft
+transformers
 bitsandbytes
+peft
+gradio
+huggingface_hub
